@@ -1,0 +1,39 @@
+{
+    "simulation_run_id": "sim:1",
+    "simulation_duration_in_seconds": 5,
+    "generate_doc_sessions_in_every_n_seconds": 1,
+    "doc_sessions_to_generate_range": [50, 100],
+    "session": {
+        "duration_in_minutes_choices": [5, 10],
+        "max_users_range": [5, 50],
+        "user_ramp_up_range_in_minutes": [1, 3]
+    },
+    "engagement": {
+        "delta_generation_every_n_seconds_per_interval" : {
+            "heavy": 5,
+            "medium": 15,
+            "low": 30    
+        },
+        "interval_duration_in_seconds": 30
+    },
+    "user_profile": {
+        "power": {
+            "heavy_pct": 0.5,
+            "medium_pct": 0.3,
+            "low_pct": 0.2
+        },
+        "regular": {
+            "heavy_pct": 0.2,
+            "medium_pct": 0.4,
+            "low_pct": 0.4
+        },
+        "casual": {
+            "heavy_pct": 0.0,
+            "medium_pct": 0.1,
+            "low_pct": 0.9
+        }
+    }
+
+
+
+}
