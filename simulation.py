@@ -113,9 +113,9 @@ async def main():
     start_timestamp = datetime.now()
     start = time.monotonic()
     simulation_duration_in_seconds = cfg['simulation_duration_in_seconds']
-    doc_id = 1
     tasks = []
     for session_num in range(1, simulation_duration_in_seconds + 1):
+        doc_id = 1
         _range = cfg['doc_sessions_to_generate_range']
         total_docs_per_session = random.randint(_range[0], _range[1]) # this amount of doc editing sessions every second
         sessions = []
